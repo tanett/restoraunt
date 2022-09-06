@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
-import {initualReduser} from "./reduser";
 import {configureStore} from "@reduxjs/toolkit";
+import {initualReduser} from "./reduser";
 
 
 const rootReduser = combineReducers({

@@ -1,17 +1,31 @@
-import {createRenderer} from "react-dom/test-utils";
-import {outAC} from "./creatAction";
-import action from "../Components/Action";
+
+import {createReducer} from "@reduxjs/toolkit";
+import {loginAC, outAC, passwordAC} from "./creatAction";
 
 
 const initialState = {
-    auto: false
+    login: "",
+    password: "",
+    auth: false
+
 }
 
 
-export const initualRiduser = createRenderer(initialState, builder=>{
+export  const initualReduser = createReducer(initialState, builder => {
     builder
+        .addCase(loginAC, (state, action)=>{
+            state.login = action.payload
+        })
 
-    addCase(outAC, (state, action)=>{
-        state.auto = action.payload
-    })
+        .addCase(passwordAC, (state, action)=>{
+            state.password = action.payload
+        })
+
+        .addCase(outAC, (state, action) =>{
+            state.auth = action.payload
+        })
+
+
+
+
 })

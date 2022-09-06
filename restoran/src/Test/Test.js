@@ -11,7 +11,7 @@ import Image23 from "../img/image 23.svg";
 import  Image24 from "../img/image 24.svg";
 import  Image25 from "../img/image 25.svg";
 import Bowl from "../img/bowl.svg"
-import  Map from  "../img/map.png"
+import  Mapes from "../../../../restorauntNew/restoran/src/img/map.png"
 import {outAC} from "../Redusers/creatAction";
 import {useDispatch} from "react-redux";
 
@@ -139,7 +139,7 @@ function Test(){
 
              <main>
                  <button className="map h-96 border">
-                     <img src={Map} alt="map"/>
+                     <img src={Mapes} alt="map"/>
                  </button>
 
              </main>
