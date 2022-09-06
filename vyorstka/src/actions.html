@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen w-full h-[400vh]">
+    <!-- Wrapper -->
+    <section class="w-5/6 py-5 m-auto relative">
+      <!-- Header -->
+      <div class="flex justify-between space-x-4 flex-col xl:flex-row">
+        <!-- Left Menu -->
+        <div class="flex justify-between min-w-[40%] gap-6">
+          <!-- Logo -->
+          <button class="flex items-center group">
+            <div
+              class="flex items-center scale-110 group-hover:scale-125 transition-all duration-300"
+            >
+              <div><img src="../img/Logo.svg" alt="" class="" /></div>
+            </div>
+            <div class="flex flex-col justify-center items-start pl-5">
+              <h2 class="uppercase font-extrabold text-5xl">Ya bao</h2>
+              <h4 class="uppercase text-xs">Дух китайской еды</h4>
+            </div>
+          </button>
+
+          <!-- Delivery -->
+          <div class="flex flex-col">
+            <p class="font-semibold">
+              Доставка пасты <span class="text-pink-900">Москва</span>
+            </p>
+            <p>
+              Время доставки <span class="text-pink-900">&bull;</span> от 31 мин
+            </p>
+          </div>
+        </div>
+        <!-- Right Menu -->
+
+        <div class="flex justify-between items-start min-w-[35%] gap-6">
+          <!-- Call button -->
+          <button
+            class="mt-6 xl:mt-0 flex justify-center items-center text-sm font-extrabold py-3 px-7 bg-gray-100 text-gray-500 rounded-full hover:shadow-xl transition-all duration-300 active:translate-y-0.5 active:bg-gray-200"
+          >
+            Заказать звонок
+          </button>
+          <!-- Number -->
+          <div class="flex font-extrabold pt-1 text-3xl text-pink-900">
+            8 800 333-36-62
+          </div>
+        </div>
+      </div>
+      <!-- Long menu -->
+      <div class="flex justify-between items-center py-10">
+        <!-- Left Side of the long menu -->
+        <ul class="flex justify-between items-center space-x-9">
+          <!-- List of menu's buttons -->
+          <li
+            class="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
+          >
+            <a href="#" class="group-active:bg-black group-active:text-white"
+              >Контакты</a
+            >
+            <div
+              class="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+            ></div>
+          </li>
+          <li
+            class="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
+          >
+            <a href="#" class="group-active:bg-black group-active:text-white"
+              >Акции</a
+            >
+            <div
+              class="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+            ></div>
+          </li>
+          <li
+            class="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
+          >
+            <a href="#" class="group-active:bg-black group-active:text-white"
+              >Пицца</a
+            >
+            <div
+              class="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+            ></div>
+          </li>
+        </ul>
+        <!-- Right Side of the long menu -->
+        <div class="justify-between flex items-center gap-3">
+          <button
+            class="py-2 px-5 flex justify-center items-center text-gray-500 text-lg font-bold border-2 border-white hover:bg-gray-500 hover:text-white rounded-lg hover:border-gray-500 active:bg-gray-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+          >
+            Войти
+          </button>
+          <button
+            class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+          >
+            <div class="border-r-2 border-r-white pr-2">Корзина</div>
+            <!-- Place for a number -->
+            <div>1</div>
+          </button>
+        </div>
+      </div>
+      <!-- Actions -->
+      <div
+        class="flex items-center py-5 pb-20 font-bold text-2xl text-pink-900"
+      >
+        Акции
+      </div>
+      <!-- Grid Menu -->
+      <section
+        class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-20 gap-y-20"
+      >
+        <!-- Pizza 1-->
+        <div
+          class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+        >
+          <div class="">
+            <img class="" src="../img/pizza1.svg" alt="" />
+          </div>
+          <div
+            class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+          >
+            <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+            <p class="text-gray-500 text-sm pb-6">
+              Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от
+              MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от
+              Bite. А также станьте автоматическим участником розыгрыша игровых
+              ключей и больших пицц 29 июня.
+            </p>
+            <button
+              class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+            >
+              Посмотреть
+            </button>
+          </div>
+        </div>
+        <!-- Pizza 2-->
+        <div class="xl:m-auto">
+          <div
+            class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+          >
+            <div class="">
+              <img class="" src="../img/pizza2.svg" alt="" />
+            </div>
+            <div
+              class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+            >
+              <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+              <p class="text-gray-500 text-sm pb-6">
+                Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм
+                от MY.GAMES, а еще кокосовый батончик и шоколадное печенье
+                «Cyber» от Bite. А также станьте автоматическим участником
+                розыгрыша игровых ключей и больших пицц 29 июня.
+              </p>
+              <button
+                class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              >
+                Посмотреть
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pizza 3-->
+        <div class="xl:ml-auto">
+          <div
+            class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+          >
+            <div class="">
+              <img class="" src="../img/pizza3.svg" alt="" />
+            </div>
+            <div
+              class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+            >
+              <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+              <p class="text-gray-500 text-sm pb-6">
+                Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм
+                от MY.GAMES, а еще кокосовый батончик и шоколадное печенье
+                «Cyber» от Bite. А также станьте автоматическим участником
+                розыгрыша игровых ключей и больших пицц 29 июня.
+              </p>
+              <button
+                class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              >
+                Посмотреть
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pizza 4-->
+        <div
+          class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+        >
+          <div class="">
+            <img class="" src="../img/pizza4.svg" alt="" />
+          </div>
+          <div
+            class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+          >
+            <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+            <p class="text-gray-500 text-sm pb-6">
+              Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от
+              MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от
+              Bite. А также станьте автоматическим участником розыгрыша игровых
+              ключей и больших пицц 29 июня.
+            </p>
+            <button
+              class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+            >
+              Посмотреть
+            </button>
+          </div>
+        </div>
+        <!-- Pizza 5-->
+        <div class="xl:m-auto">
+          <div
+            class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+          >
+            <div class="">
+              <img class="" src="../img/pizza5.svg" alt="" />
+            </div>
+            <div
+              class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+            >
+              <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+              <p class="text-gray-500 text-sm pb-6">
+                Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм
+                от MY.GAMES, а еще кокосовый батончик и шоколадное печенье
+                «Cyber» от Bite. А также станьте автоматическим участником
+                розыгрыша игровых ключей и больших пицц 29 июня.
+              </p>
+              <button
+                class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              >
+                Посмотреть
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pizza 6-->
+        <div class="xl:ml-auto">
+          <div
+            class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+          >
+            <div class="">
+              <img class="" src="../img/pizza6.svg" alt="" />
+            </div>
+            <div
+              class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+            >
+              <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+              <p class="text-gray-500 text-sm pb-6">
+                Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм
+                от MY.GAMES, а еще кокосовый батончик и шоколадное печенье
+                «Cyber» от Bite. А также станьте автоматическим участником
+                розыгрыша игровых ключей и больших пицц 29 июня.
+              </p>
+              <button
+                class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              >
+                Посмотреть
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pizza 7-->
+        <div
+          class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+        >
+          <div class="">
+            <img class="" src="../img/pizza7.svg" alt="" />
+          </div>
+          <div
+            class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+          >
+            <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+            <p class="text-gray-500 text-sm pb-6">
+              Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от
+              MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от
+              Bite. А также станьте автоматическим участником розыгрыша игровых
+              ключей и больших пицц 29 июня.
+            </p>
+            <button
+              class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+            >
+              Посмотреть
+            </button>
+          </div>
+        </div>
+        <!-- Pizza 8-->
+        <div class="xl:m-auto">
+          <div
+            class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+          >
+            <div class="">
+              <img class="" src="../img/pizza8.svg" alt="" />
+            </div>
+            <div
+              class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+            >
+              <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+              <p class="text-gray-500 text-sm pb-6">
+                Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм
+                от MY.GAMES, а еще кокосовый батончик и шоколадное печенье
+                «Cyber» от Bite. А также станьте автоматическим участником
+                розыгрыша игровых ключей и больших пицц 29 июня.
+              </p>
+              <button
+                class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              >
+                Посмотреть
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pizza 9-->
+        <div class="xl:ml-auto">
+          <div
+            class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+          >
+            <div class="">
+              <img class="" src="../img/pizza9.svg" alt="" />
+            </div>
+            <div
+              class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+            >
+              <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+              <p class="text-gray-500 text-sm pb-6">
+                Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм
+                от MY.GAMES, а еще кокосовый батончик и шоколадное печенье
+                «Cyber» от Bite. А также станьте автоматическим участником
+                розыгрыша игровых ключей и больших пицц 29 июня.
+              </p>
+              <button
+                class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              >
+                Посмотреть
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pizza 10-->
+        <div
+          class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+        >
+          <div class="">
+            <img class="" src="../img/pizza10.svg" alt="" />
+          </div>
+          <div
+            class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+          >
+            <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+            <p class="text-gray-500 text-sm pb-6">
+              Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от
+              MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от
+              Bite. А также станьте автоматическим участником розыгрыша игровых
+              ключей и больших пицц 29 июня.
+            </p>
+            <button
+              class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+            >
+              Посмотреть
+            </button>
+          </div>
+        </div>
+        <!-- Pizza 11-->
+        <div class="xl:m-auto">
+          <div
+            class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+          >
+            <div class="">
+              <img class="" src="../img/pizza11.svg" alt="" />
+            </div>
+            <div
+              class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+            >
+              <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+              <p class="text-gray-500 text-sm pb-6">
+                Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм
+                от MY.GAMES, а еще кокосовый батончик и шоколадное печенье
+                «Cyber» от Bite. А также станьте автоматическим участником
+                розыгрыша игровых ключей и больших пицц 29 июня.
+              </p>
+              <button
+                class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              >
+                Посмотреть
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pizza 12 -->
+        <div class="xl:ml-auto">
+          <div
+            class="grid grid-rows-3 grid-cols-1 shadow-xl bg-white rounded-2xl w-[350px]"
+          >
+            <div class="">
+              <img class="" src="../img/pizza12.svg" alt="" />
+            </div>
+            <div
+              class="flex items-start row-span-2 flex-col justify-center px-4 mb-10"
+            >
+              <h2 class="font-bold text-lg py-2">Дарим кибер-призы</h2>
+              <p class="text-gray-500 text-sm pb-6">
+                Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм
+                от MY.GAMES, а еще кокосовый батончик и шоколадное печенье
+                «Cyber» от Bite. А также станьте автоматическим участником
+                розыгрыша игровых ключей и больших пицц 29 июня.
+              </p>
+              <button
+                class="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              >
+                Посмотреть
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Bottom stuff -->
+      <div class="flex pt-16 pb-4 justify-between flex-col lg:flex-row">
+        <!-- Left bottom stuff -->
+        <div class="flex flex-col basis-7/12">
+          <!-- Left upper bottom stuff -->
+          <div class="flex flex-col justify-between space-y-5">
+            <!-- Logo -->
+            <button class="flex items-center group">
+              <div
+                class="flex items-center scale-110 group-hover:scale-125 transition-all duration-300"
+              >
+                <div><img src="../img/logoRed.svg" alt="" class="" /></div>
+              </div>
+              <div class="flex flex-col justify-center items-start pl-5">
+                <h2 class="uppercase font-extrabold text-5xl">Ya bao</h2>
+                <h4 class="uppercase text-xs">Дух китайской еды</h4>
+              </div>
+            </button>
+            <h3 class="text-lg font-bold">Мы в соцсетях</h3>
+          </div>
+          <!-- Left bottom bottom stuff -->
+          <div class="grid grid-cols-3 grid-rows-2 pt-6">
+            <div
+              class="text-lg hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">YouTube</a>
+            </div>
+            <div
+              class="text-lg hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">Facebook</a>
+            </div>
+            <div
+              class="text-lg hover:text-xl font-extrabold transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">Калорийность и состав</a>
+            </div>
+            <div
+              class="text-lg hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">Instagram</a>
+            </div>
+            <div
+              class="text-lg hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">ВКонтакте</a>
+            </div>
+            <div
+              class="text-lg font-extrabold hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">Правовая информация</a>
+            </div>
+          </div>
+        </div>
+        <!-- Right bottom stuff -->
+        <div class="flex flex-col basis-4/12">
+          <div class="flex flex-col">
+            <h3 class="uppercase text-lg font-extrabold pb-8">
+              Остались вопросы? а мы всегда на связи:
+            </h3>
+            <!-- Grid Icons -->
+            <div class="grid grid-cols-4 grid-rows-2 gap-4">
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2017.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2018.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2019.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2020.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2021.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2022.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300 col-span-2"
+              >
+                Написать нам
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="flex flex-col xl:flex-row mt-20 items-center xl:gap-36 gap-10 mb-10"
+      >
+        <!-- Rights -->
+        <div class="flex">
+          <h3 class="font-bold">YaBao Все права защищены 2022</h3>
+        </div>
+        <!-- Icons -->
+        <div class="flex justify-around items-center space-x-3">
+          <img src="../img/image%2023.svg" alt="" />
+          <img src="../img/image%2024.svg" alt="" />
+          <img src="../img/image%2025.svg" alt="" />
+        </div>
+        <!-- Button -->
+        <button
+          class="flex justify-center items-center text-sm font-extrabold py-3 px-7 bg-gray-100 text-gray-500 rounded-full hover:shadow-xl transition-all duration-300 active:translate-y-0.5 active:bg-gray-200"
+        >
+          Заказать звонок
+        </button>
+      </div>
+      <img class="absolute -right-20 -bottom-10" src="../img/bowl.svg" alt="" />
+    </section>
+  </body>
+</html>
