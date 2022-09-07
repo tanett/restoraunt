@@ -74,7 +74,7 @@ function Header(){
                             ></div>
                         </li>
                         <li
-                            className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300" to="/pizza"
+                            className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
                         >
                             <Link  className="group-active:bg-black group-active:text-white" to="/pizza"
                             >Пица</Link

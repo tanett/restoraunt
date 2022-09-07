@@ -1,7 +1,5 @@
 
 import  Mapes from "../../../../restorauntNew/restoran/src/img/map.png"
-import {outAC} from "../Redusers/creatAction";
-import {useDispatch} from "react-redux";
 import Header from "../Components/Action/Header";
 import Footer from "../Components/Action/Footer";
 
