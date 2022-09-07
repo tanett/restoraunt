@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen w-full h-[130vh] bg-slate-200">
+    <!-- Wrapper -->
+    <div class="flex justify-center items-center">
+      <!-- Autorization -->
+      <div
+        class="flex flex-col justify-between shadow-lg p-10 rounded-xl bg-white relative z-10"
+      >
+        <!-- Enter & Number -->
+        <div class="flex-col space-y-8">
+          <!-- Enter -->
+          <h3 class="font-extrabold text-3xl text-pink-900">Вход на сайт</h3>
+          <!-- Number -->
+          <div class="flex flex-nowrap items-center">
+            <p class="text-gray-500 text-sm mr-6">Номер телефона</p>
+            <div
+              class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
+            >
+              <!-- Input -->
+              <div
+                class="flex justify-between border-2 rounded-xl border-gray-300 p-2"
+              >
+                <input
+                  type="tel"
+                  class="ml-2 border-none md:w-60 placeholder:font-thin focus:outline-none"
+                  placeholder="+7 999 999 99-99"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Button & licence  -->
+        <div class="flex gap-6 items-center mt-20">
+          <button
+            class="flex justify-center items-center py-4 px-16 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+          >
+            Выслать код
+          </button>
+          <p class="text-gray-400 text-sm mr-6">
+            Продолжая, вы соглашаетесь
+            <span class="underline"
+              >со сбором и <br />обработкой персональных данных и
+              <br />пользовательсикм соглашением</span
+            >
+          </p>
+        </div>
+        <button
+          class="rounded-full absolute -right-14 top-2 hover:bg-pink-900 active:translate-y-0.5 transition-all duration-300"
+        >
+          <img src="../img/autorizationButton.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
