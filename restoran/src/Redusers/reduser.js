@@ -1,11 +1,11 @@
 
 import {createReducer} from "@reduxjs/toolkit";
-import {loginAC, outAC, passwordAC} from "./creatAction";
+import {codedAC, loginAC, outAC, passwordAC, phoneAC} from "./creatAction";
 
 
 const initialState = {
-    login: "",
-    password: "",
+    phone: "",
+    code: "",
     auth: false
 
 }
@@ -13,12 +13,12 @@ const initialState = {
 
 export  const initualReduser = createReducer(initialState, builder => {
     builder
-        .addCase(loginAC, (state, action)=>{
-            state.login = action.payload
+        .addCase(phoneAC, (state, action)=>{
+            state.phone = action.payload
         })
 
-        .addCase(passwordAC, (state, action)=>{
-            state.password = action.payload
+        .addCase(codedAC, (state, action)=>{
+            state.code = action.payload
         })
 
         .addCase(outAC, (state, action) =>{

@@ -1,15 +1,15 @@
 import {createAction} from "@reduxjs/toolkit";
 
-export  const loginAC = createAction(
-    "LOGIN",
+export  const phoneAC = createAction(
+    "PHONE",
 
-    (login)=>({payload:login})
+    (phone)=>({payload:phone})
 )
 
-export const  passwordAC = createAction(
-    "PASSWORD",
+export const  codedAC = createAction(
+    "CODE",
 
-    (password) => ({payload:password})
+    (code) => ({payload:code})
 )
 
 export const  outAC = createAction(
