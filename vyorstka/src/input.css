@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.talkbubble {
+  width: 230px;
+  height: 50px;
+  background: #ff2e65;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 80%;
+  top: -17px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 18px solid #ff2e65;
+}

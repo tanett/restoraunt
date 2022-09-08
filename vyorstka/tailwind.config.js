@@ -4,16 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Mulish', 'sans-serif'],
-        
+        sans: ["Mulish", "sans-serif"],
       },
       colors: {
         pink: {
-          
-          900: '#FF2E65', 
+          900: "#FF2E65",
         },
       },
     },
   },
   plugins: [],
-}
+};

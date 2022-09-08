@@ -595,6 +595,14 @@ video {
   margin: auto;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -617,6 +625,26 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
 }
 
 .flex {
@@ -898,8 +926,16 @@ video {
   padding: 8rem;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .py-5 {
@@ -998,6 +1034,10 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-5xl {
@@ -1100,6 +1140,26 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.talkbubble {
+  width: 230px;
+  height: 50px;
+  background: #ff2e65;
+  position: relative;
+  border-radius: 10px;
+}
+
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 80%;
+  top: -17px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 18px solid #ff2e65;
 }
 
 .placeholder\:font-thin::-moz-placeholder {
