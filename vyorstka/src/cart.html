@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen w-full h-[400vh]">
+    <!--  -->
+    <!--  -->
+
+    <!-- Wrapper -->
+    <section class="border-b border-b-gray-200 pb-4">
+      <div class="w-5/6 py-5 m-auto relative">
+        <!-- Header -->
+        <div class="flex justify-between space-x-4 flex-col">
+          <div class="flex justify-between gap-6">
+            <!-- Logo -->
+            <button class="flex items-center group">
+              <div
+                class="flex items-center scale-110 group-hover:scale-125 transition-all duration-300"
+              >
+                <div><img src="../img/Logo.svg" alt="" class="" /></div>
+              </div>
+              <div class="flex flex-col justify-center items-start pl-5">
+                <h2 class="uppercase font-extrabold text-5xl">Ya bao</h2>
+                <h4 class="uppercase text-xs">Дух китайской еды</h4>
+              </div>
+            </button>
+
+            <!-- Stage 1 2 3 -->
+            <div class="flex justify-between items-center gap-24">
+              <div
+                class="relative flex justify-center items-center rounded-full h-12 w-12 text-pink-900 border border-pink-900 hover:bg-pink-900 hover:text-white"
+              >
+                <div class="absolute text-black font-extrabold -bottom-8">
+                  Корзина
+                </div>
+                1
+              </div>
+              <div
+                class="relative flex justify-center items-center rounded-full h-12 w-12 text-pink-900 border border-pink-900 hover:bg-pink-900 hover:text-white"
+              >
+                <div class="absolute text-black font-extrabold -bottom-8">
+                  Корзина
+                </div>
+                2
+              </div>
+              <div
+                class="relative flex justify-center items-center rounded-full h-12 w-12 text-pink-900 border border-pink-900 hover:bg-pink-900 hover:text-white"
+              >
+                <div class="absolute text-black font-extrabold -bottom-8">
+                  Корзина
+                </div>
+                3
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <!--  -->
+
+    <!-- Cart -->
+
+    <main class="w-4/6 py-5 m-auto">
+      <h2
+        class="text-pink-900 font-extrabold text-3xl border-b border-b-gray-300 py-10 pb-14"
+      >
+        Корзина
+      </h2>
+
+      <!-- Cart Container -->
+      <div
+        class="flex justify-between items-center gap-10 py-8 border-b border-b-gray-300"
+      >
+        <div><img src="../img/cartpizza2.svg" alt="" /></div>
+        <div class="flex flex-col justify-between gap-2">
+          <p class="font-bold">С креветками и трюфелями</p>
+          <p class="text-gray-400 text-sm">
+            Домашняя паста феттуччине, сливочный соус, креветки, трюфельное
+            масло, черный перец, пармезан.350 г
+          </p>
+        </div>
+        <p class="text-pink-900 font-bold">120 &#8381;</p>
+        <div class="flex items-center justify-center">
+          <button
+            class="px-3 py-1 bg-gray-100 text-gray-600 text-lg font-bold rounded-l-lg"
+          >
+            -
+          </button>
+          <div class="px-3 py-1 bg-gray-100 text-gray-600 text-lg font-bold">
+            1
+          </div>
+          <button
+            class="px-3 py-1 bg-gray-100 text-gray-600 text-lg font-bold rounded-r-lg"
+          >
+            +
+          </button>
+        </div>
+        <div class="h-16 w-16 flex justify-center items-center">
+          <img src="../img/basketb.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="flex justify-between items-center gap-10 py-8 border-b border-b-gray-300"
+      >
+        <div><img src="../img/cartpizza1.svg" alt="" /></div>
+        <div class="flex flex-col justify-between gap-2">
+          <p class="font-bold">С креветками и трюфелями</p>
+          <p class="text-gray-400 text-sm">
+            Домашняя паста феттуччине, сливочный соус, креветки, трюфельное
+            масло, черный перец, пармезан.350 г
+          </p>
+        </div>
+        <p class="text-pink-900 font-bold">120 &#8381;</p>
+        <div class="flex items-center justify-center">
+          <button
+            class="px-3 py-1 bg-gray-100 text-gray-600 text-lg font-bold rounded-l-lg"
+          >
+            -
+          </button>
+          <div class="px-3 py-1 bg-gray-100 text-gray-600 text-lg font-bold">
+            1
+          </div>
+          <button
+            class="px-3 py-1 bg-gray-100 text-gray-600 text-lg font-bold rounded-r-lg"
+          >
+            +
+          </button>
+        </div>
+        <div class="h-16 w-16 flex justify-center items-center">
+          <img src="../img/basketp.svg" alt="" />
+        </div>
+      </div>
+      <h2 class="text-pink-900 font-extrabold text-2xl py-10">
+        Добавить к заказу?
+      </h2>
+      <div class="grid grid-cols-3 gap-6">
+        <div
+          class="flex justify-center items-center p-4 border border-gray-300 rounded-xl relative"
+        >
+          <img src="../img/arrowimg1.svg" alt="" />
+          <div class="flex flex-col justify-between ml-4">
+            <p class="font-bold">Молочный коктейль с приятным аро..</p>
+            <p class="text-pink-900 font-bold">120 &#8381;</p>
+          </div>
+          <button class="absolute -left-14">
+            <img src="../img/leftarrow.svg" alt="" />
+          </button>
+        </div>
+        <div
+          class="flex justify-center items-center p-4 border border-gray-300 rounded-xl"
+        >
+          <img src="../img/arrowimg2.svg" alt="" />
+          <div class="flex flex-col justify-between ml-4">
+            <p class="font-bold">Молочный коктейль с приятным аро..</p>
+            <p class="text-pink-900 font-bold">120 &#8381;</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center p-4 border border-gray-300 rounded-xl relative"
+        >
+          <img src="../img/arrowimg3.svg" alt="" />
+          <div class="flex flex-col justify-between ml-4">
+            <p class="font-bold">Молочный коктейль с приятным аро..</p>
+            <p class="text-pink-900 font-bold">120 &#8381;</p>
+          </div>
+          <button class="absolute -right-14">
+            <img src="../img/rightarrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <h2 class="text-pink-900 font-extrabold text-2xl py-10">
+        Соусы к бортикам и закускам?
+      </h2>
+      <div class="div flex justify-between gap-6">
+        <div
+          class="div space-y-5 p-4 flex flex-col justify-between items-center border border-gray-300 rounded-xl"
+        >
+          <img src="../img/souce1.svg" alt="" />
+          <p class="text-lg">Сырный соус</p>
+          <p class="text-pink-900 font-bold">120 &#8381;</p>
+        </div>
+        <div
+          class="div space-y-5 p-4 flex flex-col justify-between items-center border border-gray-300 rounded-xl"
+        >
+          <img src="../img/souce2.svg" alt="" />
+          <p class="text-lg">Сырный соус</p>
+          <p class="text-pink-900 font-bold">120 &#8381;</p>
+        </div>
+        <div
+          class="div space-y-5 p-4 flex flex-col justify-between items-center border border-gray-300 rounded-xl"
+        >
+          <img src="../img/souce3.svg" alt="" />
+          <p class="text-lg">Сырный соус</p>
+          <p class="text-pink-900 font-bold">120 &#8381;</p>
+        </div>
+        <div
+          class="div space-y-5 p-4 flex flex-col justify-between items-center border border-gray-300 rounded-xl"
+        >
+          <img src="../img/souce4.svg" alt="" />
+          <p class="text-lg">Сырный соус</p>
+          <p class="text-pink-900 font-bold">120 &#8381;</p>
+        </div>
+        <div
+          class="div space-y-5 p-4 flex flex-col justify-between items-center border border-gray-300 rounded-xl"
+        >
+          <img src="../img/souce5.svg" alt="" />
+          <p class="text-lg">Сырный соус</p>
+          <p class="text-pink-900 font-bold">120 &#8381;</p>
+        </div>
+        <div
+          class="div space-y-5 p-4 flex flex-col justify-between items-center border border-gray-300 rounded-xl"
+        >
+          <img src="../img/souce6.svg" alt="" />
+          <p class="text-lg">Сырный соус</p>
+          <p class="text-pink-900 font-bold">120 &#8381;</p>
+        </div>
+      </div>
+      <!-- Promcodes -->
+      <h2 class="text-pink-900 font-extrabold text-2xl py-10">Промокоды</h2>
+      <div class="flex justify-between items-center mb-20">
+        <div class="flex justify-center items-center">
+          <div
+            class="p-3 px-8 border border-gray-300 rounded-l-xl flex items-center font-extrabold text-gray-400"
+          >
+            <input
+              type="text"
+              class="w-full text-center"
+              placeholder="Введите промкод"
+            />
+          </div>
+          <button
+            class="p-3 px-8 flex justify-center items-center border border-pink-900 rounded-r-xl bg-pink-900 text-white font-extrabold"
+          >
+            Применить
+          </button>
+        </div>
+        <div class="flex items-center justify-end font-bold text-2xl">
+          Сумма заказа:&nbsp;<snap
+            class="text-pink-900 text-3xl tracking-widest"
+            >1048 &#8381;</snap
+          >
+        </div>
+      </div>
+      <div class="flex justify-between items-center">
+        <button
+          class="flex group items-center text-gray-500 font-bold hover:bg-pink-900 hover:text-white px-10 py-5 rounded-xl"
+        >
+          <svg
+            width="9"
+            height="14"
+            viewBox="0 0 9 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.996094 6.90625C0.732422 7.16992 0.732422 7.60938 0.996094 7.87305L6.67969 13.5859C6.97266 13.8496 7.41211 13.8496 7.67578 13.5859L8.34961 12.9121C8.61328 12.6484 8.61328 12.209 8.34961 11.916L3.83789 7.375L8.34961 2.86328C8.61328 2.57031 8.61328 2.13086 8.34961 1.86719L7.67578 1.19336C7.41211 0.929688 6.97266 0.929688 6.67969 1.19336L0.996094 6.90625Z"
+              fill="#6B7280"
+              fill-opacity="0.8"
+              class="group-hover:fill-white"
+            />
+          </svg>
+
+          &nbsp;&nbsp;&nbsp;&nbsp; Вернуться в магазин
+        </button>
+        <button
+          class="flex group items-center text-gray-500 font-bold hover:bg-pink-900 hover:text-white px-10 py-5 rounded-xl"
+        >
+          Вернуться в магазин&nbsp;&nbsp;&nbsp;&nbsp;
+          <svg
+            width="7"
+            height="11"
+            viewBox="0 0 7 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.5625 5.87305C6.82617 5.60938 6.82617 5.16992 6.5625 4.87695L2.57812 0.892578C2.28516 0.628906 1.8457 0.628906 1.58203 0.892578L0.908203 1.56641C0.644531 1.85938 0.644531 2.29883 0.908203 2.5625L3.75 5.4043L0.908203 8.2168C0.644531 8.48047 0.644531 8.91992 0.908203 9.21289L1.58203 9.85742C1.8457 10.1504 2.28516 10.1504 2.57812 9.85742L6.5625 5.87305Z"
+              fill="#6B7280"
+              fill-opacity="0.8"
+              class="group-hover:fill-white"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+
+    <section class="w-5/6 py-5 m-auto relative">
+      <!-- Bottom stuff -->
+      <div class="flex pt-16 pb-4 justify-between flex-col lg:flex-row">
+        <!-- Left bottom stuff -->
+        <div class="flex flex-col basis-7/12">
+          <!-- Left upper bottom stuff -->
+          <div class="flex flex-col justify-between space-y-5">
+            <!-- Logo -->
+            <button class="flex items-center group">
+              <div
+                class="flex items-center scale-110 group-hover:scale-125 transition-all duration-300"
+              >
+                <div><img src="../img/logoRed.svg" alt="" class="" /></div>
+              </div>
+              <div class="flex flex-col justify-center items-start pl-5">
+                <h2 class="uppercase font-extrabold text-5xl">Ya bao</h2>
+                <h4 class="uppercase text-xs">Дух китайской еды</h4>
+              </div>
+            </button>
+            <h3 class="text-lg font-bold">Мы в соцсетях</h3>
+          </div>
+          <!-- Left bottom bottom stuff -->
+          <div class="grid grid-cols-3 grid-rows-2 pt-6">
+            <div
+              class="text-lg hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">YouTube</a>
+            </div>
+            <div
+              class="text-lg hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">Facebook</a>
+            </div>
+            <div
+              class="text-lg hover:text-xl font-extrabold transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">Калорийность и состав</a>
+            </div>
+            <div
+              class="text-lg hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">Instagram</a>
+            </div>
+            <div
+              class="text-lg hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">ВКонтакте</a>
+            </div>
+            <div
+              class="text-lg font-extrabold hover:text-xl transition-all duration-300 hover:text-pink-900"
+            >
+              <a href="#">Правовая информация</a>
+            </div>
+          </div>
+        </div>
+        <!-- Right bottom stuff -->
+        <div class="flex flex-col basis-4/12">
+          <div class="flex flex-col">
+            <h3 class="uppercase text-lg font-extrabold pb-8">
+              Остались вопросы? а мы всегда на связи:
+            </h3>
+            <!-- Grid Icons -->
+            <div class="grid grid-cols-4 grid-rows-2 gap-4">
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2017.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2018.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2019.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2020.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2021.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300"
+              >
+                <img src="../img/image%2022.svg" alt="" />
+              </button>
+              <button
+                class="rounded-xl py-2 border-2 border-slate-300 flex justify-center items-center hover:scale-110 transition-all duration-300 col-span-2"
+              >
+                Написать нам
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="flex flex-col xl:flex-row mt-20 items-center xl:gap-36 gap-10 mb-10"
+      >
+        <!-- Rights -->
+        <div class="flex">
+          <h3 class="font-bold">YaBao Все права защищены 2022</h3>
+        </div>
+        <!-- Icons -->
+        <div class="flex justify-around items-center space-x-3">
+          <img src="../img/image%2023.svg" alt="" />
+          <img src="../img/image%2024.svg" alt="" />
+          <img src="../img/image%2025.svg" alt="" />
+        </div>
+        <!-- Button -->
+        <button
+          class="flex justify-center items-center text-sm font-extrabold py-3 px-7 bg-gray-100 text-gray-500 rounded-full hover:shadow-xl transition-all duration-300 active:translate-y-0.5 active:bg-gray-200"
+        >
+          Заказать звонок
+        </button>
+      </div>
+      <img class="absolute -right-20 -bottom-10" src="../img/bowl.svg" alt="" />
+    </section>
+  </body>
+</html>
