@@ -1,12 +1,13 @@
 
 import {createReducer} from "@reduxjs/toolkit";
-import {codedAC, loginAC, outAC, passwordAC, phoneAC} from "./creatAction";
+import {codedAC, outAC, phoneAC, pizzaAC} from "./creatAction";
 
 
 const initialState = {
     phone: "",
     code: "",
-    auth: false
+    auth: false,
+    pizza:0
 
 }
 
@@ -23,6 +24,10 @@ export  const initualReduser = createReducer(initialState, builder => {
 
         .addCase(outAC, (state, action) =>{
             state.auth = action.payload
+        })
+
+        .addCase(pizzaAC, (state, action)=>{
+            state.pizza++
         })
 
 

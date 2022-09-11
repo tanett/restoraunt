@@ -1,4 +1,5 @@
 import {createAction} from "@reduxjs/toolkit";
+import pizza from "../Components/Pizza";
 
 export  const phoneAC = createAction(
     "PHONE",
@@ -16,4 +17,12 @@ export const  outAC = createAction(
     "AUTO",
 
     (auto)=>({payload:auto})
+)
+
+
+export const pizzaAC = createAction(
+    "PIZZA",
+
+    (pizza)=>({payload:pizza})
+
 )

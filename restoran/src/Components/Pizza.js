@@ -1,5 +1,7 @@
 import Header from "./Action/Header";
 import Footer from "./Action/Footer";
+import Pizzamain from "./Pizza/Pizzamain";
+
 
 
 function Pizza(){
@@ -9,7 +11,7 @@ function Pizza(){
 
                 <Header/>
 
-
+                <Pizzamain/>
 
                 <Footer/>
             </section>

@@ -1,7 +1,34 @@
 
+import {useDispatch, useSelector} from "react-redux";
+import {codedAC, outAC} from "../../Redusers/creatAction";
 
 
-function Login2(){
+function Code({setIsPhone}){
+
+    const state = useSelector(state=>state.initual)
+
+    const dispatch = useDispatch()
+
+    const handelCode = (e)=>{
+        dispatch(codedAC(e.target.value))
+    }
+
+
+
+
+    const onAuth =()=>{
+        dispatch(outAC(true))
+        setIsPhone(true)
+    }
+
+
+    const onClick = ()=>{
+        setIsPhone(true)
+    }
+
+    const phone = useSelector(state => state.initual.phone);
+
+
     return(
         <div>
 
@@ -19,9 +46,11 @@ function Login2(){
 
                         <div className="flex gap-10 items-center">
                             <p className="text-gray-500 text-sm">Номер телефона</p>
-                            <div className="text-gray-500">+7 999 999-99-99</div>
+                            <div className="text-gray-500" >{phone}</div>
                             <button
                                 className="text-pink-900 text-sm border-dashed border-b-2 border-pink-900 hover:scale-110 transition-all duration-300"
+
+                                onClick={onClick}
                             >
                                 Изменить
                             </button>
@@ -34,19 +63,25 @@ function Login2(){
                         <div
                             className="flex justify-center border-2 rounded-xl border-gray-300 p-2 w-24"
                         >
-                            <input type="tel" className="border-none w-20"/>
+                            <input type="tel" className="border-none w-20" onChange={handelCode}/>
                         </div>
                         <button
-                            className="text-pink-900 text-sm border-dashed border-b-2 border-pink-900 hover:scale-110 transition-all duration-300"
+                            className={`text-pink-900 text-sm border-dashed border-b-2 border-pink-900 hover:scale-110 transition-all duration-300 ${!(state.code==="****")?"opacity-50":""}`}
+                            disabled={!(state.code === "****")} type="submit"
+                            onClick={onAuth}
                         >
-                            Получить новый код
+                            Проверить код
                         </button>
                     </div>
-                    <button
-                        className="rounded-full absolute -right-14 -top-6 hover:bg-pink-900 active:translate-y-0.5 transition-all duration-300"
-                    >
-                        <img src="../img/autorizationButton.svg" alt=""/>
-                    </button>
+                    {state.code!="****"?
+                        <div className="bg-red-900 text-white">
+
+                            Неправильный код
+                        </div>
+                        :
+                        null
+                    }
+
                 </div>
             </div>
 
@@ -54,4 +89,4 @@ function Login2(){
     )
 }
 
-export default Login2
+export default Code

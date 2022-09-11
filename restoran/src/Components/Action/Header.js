@@ -1,13 +1,23 @@
 
 import Logo from "../../img/Logo.svg";
 import {Link} from "react-router-dom";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {outAC, pizzaAC} from "../../Redusers/creatAction";
 
 
 
 function Header(){
-
+   const state = useSelector(state=>state.initual)
     const dipatch = useDispatch();
+
+   const onAuto = ()=>{
+       dipatch(outAC(false))
+   }
+
+
+
+    const pizza = useSelector(state=>state.initual.pizza)
+
 
 
 
@@ -76,7 +86,7 @@ function Header(){
                         <li
                             className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
                         >
-                            <Link  className="group-active:bg-black group-active:text-white" to="/pizza"
+                            <Link  className="group-active:bg-black group-active:text-white" to="/"
                             >Пица</Link
                             >
                             <div
@@ -96,19 +106,35 @@ function Header(){
                     </ul>
 
                     <div className="justify-between flex items-center gap-3">
-                        <Link
-                            className="py-2 px-5 flex justify-center items-center text-gray-500 text-lg font-bold border-2 border-white hover:bg-gray-500 hover:text-white rounded-lg hover:border-gray-500 active:bg-gray-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
 
-                          to="/Login"
-                        >
-                            Войти
-                        </Link>
+                        {state.auth?
+                            <button
+                                className="py-2 px-5 flex justify-center items-center text-gray-500 text-lg font-bold border-2 border-white hover:bg-gray-500 hover:text-white rounded-lg hover:border-gray-500 active:bg-gray-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+
+                                onClick={onAuto}
+                            >
+                                Выйти
+                            </button>
+                            :
+
+                                <Link
+                                    className="py-2 px-5 flex justify-center items-center text-gray-500 text-lg font-bold border-2 border-white hover:bg-gray-500 hover:text-white rounded-lg hover:border-gray-500 active:bg-gray-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+
+                                    to="/Login"
+
+                                >
+                                    Войти
+                                </Link>
+
+
+                        }
+
                         <button
                             className="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
                         >
-                            <div className="border-r-2 border-r-white pr-2">Корзина</div>
+                            <div className="border-r-2 border-r-white pr-2" > Корзина</div>
 
-                            <div>1</div>
+                            <div> {pizza}</div>
                         </button>
                     </div>
                 </div>
