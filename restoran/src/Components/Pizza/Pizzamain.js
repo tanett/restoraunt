@@ -41,23 +41,22 @@ import Payment5 from "../../img/payment4.svg"
 import Mapes from "../../img/map.png";
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {pizzaAC} from "../../Redusers/creatAction";
-import pizza from "../Pizza";
+import {pizzaPlyusAC} from "../../Redusers/creatAction";
+
 
 function Pizzamain() {
-    const state = useSelector(state=>state.initual)
-    const pizza = useSelector(state=>state.initual.pizza)
-    const [value, setValue] = useState("")
-    const [totle, setTotla] = useState(0)
+
+    const pizzaColishestvo = useSelector(state=>state.initual.pizzaColishestvo)
+    const [totle, setTotla] = useState(pizzaColishestvo)
 
 
     const dipatch = useDispatch()
-    const onPizza = (pizza)=>{
-        if(!value){
+    const onPizza = ()=>{
+
             const x = totle+1
             setTotla(x)
-        }
-        dipatch(pizzaAC(false))
+
+        dipatch(pizzaPlyusAC())
 
 
     }

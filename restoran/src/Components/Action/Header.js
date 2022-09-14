@@ -2,7 +2,9 @@
 import Logo from "../../img/Logo.svg";
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {outAC, pizzaAC} from "../../Redusers/creatAction";
+import {outAC, pizzaPlyusAC} from "../../Redusers/creatAction";
+import {useState} from "react";
+
 
 
 
@@ -10,13 +12,17 @@ function Header(){
    const state = useSelector(state=>state.initual)
     const dipatch = useDispatch();
 
+   const [isShowMenu, setIsShowMenu] = useState(false)
+
    const onAuto = ()=>{
        dipatch(outAC(false))
    }
 
 
 
-    const pizza = useSelector(state=>state.initual.pizza)
+    const pizzaColishestvo = useSelector(state=>state.initual.pizzaColishestvo)
+
+
 
 
 
@@ -67,43 +73,102 @@ function Header(){
                     </div>
                 </div>
 
-                <div className="flex justify-between items-center py-10">
+                <div className="flex justify-between items-center py-5">
 
-                    <ul className="flex justify-between items-center space-x-9">
+                    <div className="hidden md:block"> {/*desktop menu*/}
+                        <ul className="flex justify-between items-center space-x-9 ">
 
 
 
-                        <li
-                            className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
-                        >
-                            <Link className="group-active:bg-black group-active:text-white" to="/action"
-                            >Акции</Link
+                            <li
+                                className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
                             >
-                            <div
-                                className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
-                            ></div>
-                        </li>
-                        <li
-                            className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
-                        >
-                            <Link  className="group-active:bg-black group-active:text-white" to="/"
-                            >Пица</Link
+                                <Link className="group-active:bg-black group-active:text-white" to="/action"
+                                >Акции</Link
+                                >
+                                <div
+                                    className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+                                ></div>
+                            </li>
+                            <li
+                                className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
                             >
-                            <div
-                                className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
-                            ></div>
-                        </li>
-                        <li
-                            className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
-                        >
-                            <Link className="group-active:bg-black group-active:text-white" to="/kontact"
-                            >Контакты</Link
+                                <Link  className="group-active:bg-black group-active:text-white" to="/"
+                                >Пица</Link
+                                >
+                                <div
+                                    className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+                                ></div>
+                            </li>
+                            <li
+                                className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
                             >
-                            <div
-                                className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
-                            ></div>
-                        </li>
-                    </ul>
+                                <Link className="group-active:bg-black group-active:text-white" to="/kontact"
+                                >Контакты</Link
+                                >
+                                <div
+                                    className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+                                ></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                   <div className="relative">
+
+
+                       <button
+                           className="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300   md:hidden"
+
+                           onClick={()=>setIsShowMenu(!isShowMenu)}
+                       >
+                           <div className=" border-r-white pr-2" > Menu </div>
+
+                       </button>
+                       {isShowMenu &&
+                           <div className="flex md:hidden"> {/*mobil menu*/}
+                               <ul className="flex flex-col gap-2 justify-start items-start bg-white border rounded shadow p-4 absolute">
+
+
+
+                                   <li
+                                       className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
+                                   >
+                                       <Link className="group-active:bg-black group-active:text-white" to="/action"
+                                       >Акции</Link
+                                       >
+                                       <div
+                                           className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+                                       ></div>
+                                   </li>
+                                   <li
+                                       className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
+                                   >
+                                       <Link  className="group-active:bg-black group-active:text-white" to="/"
+                                       >Пица</Link
+                                       >
+                                       <div
+                                           className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+                                       ></div>
+                                   </li>
+                                   <li
+                                       className="font-bold flex-col flex justify-center items-center text-lg group transition-all duration-300"
+                                   >
+                                       <Link className="group-active:bg-black group-active:text-white" to="/kontact"
+                                       >Контакты</Link
+                                       >
+                                       <div
+                                           className="border-b-black w-10 border-b-2 opacity-0 group-hover:opacity-100 group-active:opacity-0"
+                                       ></div>
+                                   </li>
+                               </ul>
+                           </div>
+                       }
+
+                   </div>
 
                     <div className="justify-between flex items-center gap-3">
 
@@ -129,13 +194,15 @@ function Header(){
 
                         }
 
-                        <button
-                            className="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"
+                        <Link
+                            className="flex justify-center items-center py-3 px-8 bg-pink-900 font-bold text-white gap-2 rounded-lg hover:bg-pink-700 active:translate-y-0.5 hover:shadow-lg transition-all duration-300"  to="/carzina"
                         >
                             <div className="border-r-2 border-r-white pr-2" > Корзина</div>
 
-                            <div> {pizza}</div>
-                        </button>
+                                <div> {pizzaColishestvo} </div>
+
+
+                        </Link>
                     </div>
                 </div>
             </header>

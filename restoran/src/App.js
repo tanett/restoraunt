@@ -10,6 +10,7 @@ import Pizza from "./Components/Pizza";
 import Kontact from "./Components/Kontact";
 
 import Login from "./Components/Avtorizacia/Login";
+import Carzina from "./Components/Pizza/Carzina";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
            <Route path="/login"   element={<Login/>}/>
            <Route path="/action"  element={<Action/>}/>
            <Route path="/kontact" element={<Kontact/>}/>
+           <Route path="/carzina" element={<Carzina/>}/>
        </Routes>
    </BrowserRouter>
 
