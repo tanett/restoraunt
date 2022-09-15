@@ -11,6 +11,8 @@ import Kontact from "./Components/Kontact";
 
 import Login from "./Components/Avtorizacia/Login";
 import Carzina from "./Components/Pizza/Carzina";
+import Add from "./Components/Pizza/PizzaList";
+
 
 
 function App() {
@@ -27,8 +29,8 @@ function App() {
        </Routes>
    </BrowserRouter>
 
-
     </div>
+
   );
 }
 

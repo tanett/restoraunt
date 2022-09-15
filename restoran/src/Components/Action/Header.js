@@ -10,6 +10,7 @@ import {useState} from "react";
 
 function Header(){
    const state = useSelector(state=>state.initual)
+
     const dipatch = useDispatch();
 
    const [isShowMenu, setIsShowMenu] = useState(false)

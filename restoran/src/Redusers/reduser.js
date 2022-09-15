@@ -1,7 +1,18 @@
 
 import {createReducer} from "@reduxjs/toolkit";
-import {codedAC, deleteAC, onDeleteAC, outAC, phoneAC, pizzaPlyusAC, pizzaMinusAC, pizzaZiroAC} from "./creatAction";
-import action from "../Components/Action";
+
+
+
+import {
+    codedAC,
+    outAC,
+    phoneAC,
+    pizzaPlyusAC,
+    pizzaMinusAC,
+    pizzaZiroAC,
+    addpizzaAC, deletepizzaAC, carzinapizzaAC, addPizzaAC
+} from "./creatAction";
+
 
 
 const initialState = {
@@ -9,7 +20,60 @@ const initialState = {
     code: "",
     auth: false,
     pizzaColishestvo:0,
-    pizzaList:[],
+    pizzaList:[
+        {
+            id:1,
+            img: "../img/menupizza1.svg",
+            title: "С креветками и трюфелями",
+            text: "Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан 350 г",
+            amd: "1600 ₽"
+        },
+        {
+            id:2,
+            img: "../../img/menupizza2.svg",
+            title: "Маргарита",
+            text: "Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан 350 г",
+            amd: "1200 ₽"
+        },
+        {
+            id:3,
+            img: "../../img/menupizza3.svg",
+            title: "Четыре сыра",
+            text: "Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан 350 г",
+            amd: "800 ₽"
+        },
+        {
+            id:4,
+            img: "../../img/menupizza4.svg",
+            title: "Пепирони",
+            text: "Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан 350 г",
+            amd: "600 ₽"
+        },
+        {
+            id:5,
+            img: "../../img/menupizza1.svg",
+            title: "С копченой курицей",
+            text: "Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан 350 г",
+            amd: "1500 ₽"
+        },
+        {
+            id:6,
+            img: "../../img/menupizza2.svg",
+            title: "С телятиной",
+            text: "Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан 350 г",
+            amd: "1100 ₽"
+        },
+        {
+            id:7,
+            img: "../../img/menupizza3.svg",
+            title: "Вегитарианская",
+            text: "Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан 350 г",
+            amd: "900 ₽"
+        },
+
+    ],
+
+    carzina:[]
 
 
 }
@@ -40,5 +104,15 @@ export  const initualReduser = createReducer(initialState, builder => {
         .addCase(pizzaZiroAC, (state, action)=>{
             state.pizzaColishestvo=0
         })
+
+        .addCase(addPizzaAC, (state, action)=>{
+            state.carzina.push(action.payload)
+
+        })
+
+        .addCase(deletepizzaAC, (state, action)=>{
+            state.pizzaList = state.pizzaList.filter(item=>item.id!==action.payload)
+        })
+
 
 })

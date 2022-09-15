@@ -23,8 +23,6 @@ export const  outAC = createAction(
 export const pizzaPlyusAC = createAction(
     "PIZZA",
 
-
-
 )
 
 
@@ -37,3 +35,13 @@ export const pizzaZiroAC = createAction(
     "PIZZA_ZIRO",
 
 )
+
+export const addPizzaAC = createAction(
+    "ADD_PIZZA_ITEM",
+    (pizzaItem)=>({payload:pizzaItem})
+)
+
+export const deletepizzaAC = createAction(
+    "DELETE_PIZZZ_ITEM",
+)
+
