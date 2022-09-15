@@ -2,13 +2,12 @@ import Menupizza1 from "../../img/menupizza1.svg";
 import {useDispatch, useSelector} from "react-redux";
 import {addPizzaAC, addpizzaAC, pizzaPlyusAC} from "../../Redusers/creatAction";
 import {useState} from "react";
-import pizzaList from "./PizzaList";
 
 
 
 function PizzaItem({title, img, text, amd}){
     const pizzaColishestvo = useSelector(state=>state.initual.pizzaColishestvo)
-    const pizzaList = useSelector(state => state.initual.pizzaList)
+    const pizza = useSelector(state => state.initual.pizza)
     const carzina = useSelector(state => state.initual.carzina)
     const [totle, setTotla] = useState(pizzaColishestvo)
     const dipatch = useDispatch()
@@ -20,7 +19,7 @@ function PizzaItem({title, img, text, amd}){
         const x = totle+1
         setTotla(x)
 
-        const pizzaList = {
+        const pizza = {
             id: Date.now(),
             text: text,
             img: img,
@@ -28,7 +27,7 @@ function PizzaItem({title, img, text, amd}){
             title:title
         }
         dipatch(pizzaPlyusAC())
-        dipatch(addPizzaAC(pizzaList))
+        dipatch(addPizzaAC(pizza))
 
     }
 

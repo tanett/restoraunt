@@ -10,9 +10,8 @@ import Souce3 from "../../img/souce3.svg"
 import Souce4 from "../../img/souce4.svg"
 import Souce5 from "../../img/souce5.svg"
 import Souce6 from "../../img/souce6.svg"
-import CarzinaPizza from "./CarzinaPizza";
 import CarzinaPizzaList from "./CarzinaPizzaList";
-import pizzaList from "./PizzaList";
+
 
 
 
@@ -33,18 +32,10 @@ function Carzina(){
 
                 </h2>
 
-
-
-
-
-
                 <div className="">
 
 
-                <CarzinaPizzaList />
-
-
-
+                <CarzinaPizzaList/>
 
                 </div>
 

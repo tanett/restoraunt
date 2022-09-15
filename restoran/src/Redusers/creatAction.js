@@ -41,7 +41,8 @@ export const addPizzaAC = createAction(
     (pizzaItem)=>({payload:pizzaItem})
 )
 
-export const deletepizzaAC = createAction(
+export const deletePizzaAC = createAction(
     "DELETE_PIZZZ_ITEM",
+    (id)=>({payload:id})
 )
 

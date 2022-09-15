@@ -4,11 +4,11 @@ import CarzinaPizza from "./CarzinaPizza";
 
 
 function CarzinaPizzaList(){
-    const  pizzaList = useSelector(state=>state.initual.carzina)
+    const  carzina = useSelector(state=>state.initual.carzina)
 
     return(
         <>
-            {pizzaList.map((item, index)=><CarzinaPizza key={index} title ={item.title} id={item.id} img={item.img} text={item.text} amd={item.amd} /> )}
+            {carzina.map((item, index)=><CarzinaPizza key={index} title ={item.title}  id={item.id} img={item.img} text={item.text} amd={item.amd} /> )}
 
         </>
     )

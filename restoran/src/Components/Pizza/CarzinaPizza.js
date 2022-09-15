@@ -1,9 +1,9 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useState} from "react";
-import {pizzaMinusAC, pizzaPlyusAC, pizzaZiroAC} from "../../Redusers/creatAction";
+import {deletePizzaAC, pizzaMinusAC, pizzaPlyusAC, pizzaZiroAC} from "../../Redusers/creatAction";
 
 
-function CarzinaPizza({title, img, text, amd}){
+function CarzinaPizza({title, img, text, amd, id}){
     const pizzaColishestvo = useSelector(state=>state.initual.pizzaColishestvo)
     const pizzaList = useSelector(state=>state.initual.pizzaList)
     const [totle, setTotla] = useState(pizzaColishestvo)
@@ -34,13 +34,9 @@ function CarzinaPizza({title, img, text, amd}){
             setTotla(totle)
         }
         dipatch(pizzaZiroAC())
-
+        dipatch(deletePizzaAC(id))
 
     }
-
-
-
-
 
     return(
 

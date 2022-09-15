@@ -10,7 +10,7 @@ import {
     pizzaPlyusAC,
     pizzaMinusAC,
     pizzaZiroAC,
-    addpizzaAC, deletepizzaAC, carzinapizzaAC, addPizzaAC
+    addPizzaAC, deletePizzaAC
 } from "./creatAction";
 
 
@@ -73,7 +73,7 @@ const initialState = {
 
     ],
 
-    carzina:[]
+    carzina:[],
 
 
 }
@@ -110,8 +110,8 @@ export  const initualReduser = createReducer(initialState, builder => {
 
         })
 
-        .addCase(deletepizzaAC, (state, action)=>{
-            state.pizzaList = state.pizzaList.filter(item=>item.id!==action.payload)
+        .addCase(deletePizzaAC, (state, action)=>{
+            state.carzina = state.carzina.filter(item=>item.id!==action.payload)
         })
 
 
